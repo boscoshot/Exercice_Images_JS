@@ -2,7 +2,7 @@
   <head>
     <script>
       function lancer(){
-        var Val = Math.floor((Math.random() * 6)+1);
+        var Val = Math.floor((Math.random() * 2)+1);
         document.getElementById('C4').style.display = 'none';
 	document.getElementById('C1').style.display = 'none';
 	document.getElementById('C2').style.display = 'none';
@@ -31,6 +31,14 @@
 	            document.getElementById('C2').style.display = 'block';
                     document.getElementById('C7').style.display = 'block';
 	            document.getElementById('C3').style.display = 'block';
+                    break;
+        }
+	case 4 :
+                    document.getElementById('C1').style.display = 'block';
+	            document.getElementById('C2').style.display = 'block';
+                    document.getElementById('C7').style.display = 'block';
+	            document.getElementById('C3').style.display = 'block';
+	            document.getElementById('C4').style.display = 'block';
                     break;
         }
         
