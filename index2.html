@@ -20,19 +20,22 @@ function controler(){
 function afficherimg(){
 	if(document.getElementById('Control1').checked){
 			document.getElementById('uneimage1').style.display="Block";
-            document.getElementById('uneimage2').style.display="None";
-            document.getElementById('uneimage3').style.display="None";
 		}
+        else {
+            document.getElementById('uneimage1').style.display="None";
+        }
         if(document.getElementById('Control2').checked){
 			document.getElementById('uneimage2').style.display="Block";
-            document.getElementById('uneimage1').style.display="None";
-            document.getElementById('uneimage3').style.display="None";
 		}
+        else {
+            document.getElementById('uneimage2').style.display="None";
+        }
         if(document.getElementById('Control3').checked){
 			document.getElementById('uneimage3').style.display="Block";
-            document.getElementById('uneimage2').style.display="None";
-            document.getElementById('uneimage1').style.display="None";
 		}
+        else {
+            document.getElementById('uneimage3').style.display="None";
+        }
 		
 }
 
