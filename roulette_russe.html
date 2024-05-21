@@ -5,6 +5,17 @@
 	select1 = 0;
 	select2 = 0;
 	select3 = 0;
+
+	function lancer2(){
+		try {
+			document.getElementById("Br8").style.fill="red";
+			console.log(objet.inexistante);
+		} catch (erreur) {
+			alert("Erreur de programme");
+			console.error("Une erreur s'est produite : " + erreur.message);
+		}
+	}
+	
 function fct2(id){	
 	document.getElementById("Br"+id).style.fill="red";
 	compteur = compteur+1;
@@ -60,7 +71,8 @@ function lancer(){
 	<circle cx="100" cy="100" r="10" stroke="black" stroke-width="3" fill="black" />
 	</svg>	
 	
-	<button onclick="lancer()">Jouer</button>	
+	<button onclick="lancer()">Jouer</button>
+	<button onclick="lancer2()">Jouer</button>
 	
 </body>
 </html>
