@@ -5,8 +5,6 @@
 function fct2(id){	
 	document.getElementById("Br"+id).style.fill="red";
 	compteur = compteur+1;
-	select3 = select2;
-	select2 = select1;
 	select1 = id;
 }
 
@@ -18,12 +16,6 @@ function lancer(){
 			alert("Maximum 3 selections autorisees, desole !")
 		}
 		if(Tourner==select1){
-			alert("Vous avez perdu !")
-		}
-		else if (Tourner==select2) {
-			alert("Vous avez perdu !")
-		}
-		else if (Tourner==select3) {
 			alert("Vous avez perdu !")
 		}
 		else if (compteur==3) {
