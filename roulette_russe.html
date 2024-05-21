@@ -4,10 +4,10 @@
 	compteur = 0;
 function fct2(id){	
 	document.getElementById("Br"+id).style.fill="red";
+	compteur = compteur+1;
 	select3 = select2;
 	select2 = select1;
-	select1 = id;	
-	compteur = compteur+1;
+	select1 = id;
 }
 
 function lancer(){
@@ -23,7 +23,7 @@ function lancer(){
 		else if(Tourner==select2){
 			alert("Vous avez perdu !")
 		}
-			else if(Tourner==select3){
+		else if(Tourner==select3){
 			alert("Vous avez perdu !")
 		}
 		else if (compteur==3) {
