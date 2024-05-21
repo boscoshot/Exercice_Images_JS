@@ -12,15 +12,22 @@ function lancer(){
 		Tourner = parseInt(Math.random()*6);
 		alert(Tourner)
 		document.getElementById("Br"+Tourner).style.fill="blue";
+	        if(compteur>3){
+			alert("Maximum 3 sélections autorisées")
+		}
 		if(Tourner==select){
 			alert("Perdu")
 		}
-		else {
-			alert("Gagné")
+		else if (compteur==3) {
+			alert("Gagné 1.000.000 €")
 		}
-		if(compteur>3){
-			alert("Maximum 3 sélections autorisées")
+		else if (compteur==2) {
+			alert("Gagné 100.000 €")
 		}
+		else if (compteur==1) {
+			alert("Gagné 10.000 €")
+		}
+		
 }
 
 
