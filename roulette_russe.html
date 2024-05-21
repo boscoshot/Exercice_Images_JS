@@ -1,14 +1,26 @@
 </html>
 <head>
 <script>
-function fct2(id){
+	compteur = 0;
+function fct2(id){	
 	document.getElementById("Br"+id).style.fill="red";
+	select = id;
+	compteur = compteur+1;
 }
 
 function lancer(){
 		Tourner = parseInt(Math.random()*6);
-		alert(Tourner);
-	        document.getElementById("Br"+Tourner).style.fill="blue";	
+		alert(Tourner)
+		document.getElementById("Br"+Tourner).style.fill="blue";
+		if(Tourner==select){
+			alert("Perdu")
+		}
+		else {
+			alert("Gagné")
+		}
+		if(compteur>3){
+			alert("Maximum 3 sélections autorisées")
+		}
 }
 
 
