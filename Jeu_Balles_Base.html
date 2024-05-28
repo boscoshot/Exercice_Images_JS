@@ -26,7 +26,7 @@ function bouger(){
 	var ballblueY = parseInt(document.getElementById('ballblue').getAttribute("cy"));
         var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
 	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
-	else if(ballY>ballblueY){
+	else if(ballY<ballblueY){
 		document.getElementById('ballblue').setAttribute("cy", ballblueY-15);
 		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
 	}
