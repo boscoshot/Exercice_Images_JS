@@ -28,10 +28,10 @@ function bouger(){
 	var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
 	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
 	if(ballblueX>ballX){
-		document.getElementById('ballblue').setAttribute("cx", ballblueX+15);
+		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
 	}
 	else if(ballblueX<ballX){
-		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
+		document.getElementById('ballblue').setAttribute("cx", ballblueX+15);
 	}
 	
 	if(ballblueY>ballY){
