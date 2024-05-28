@@ -26,7 +26,6 @@ function bouger(){
 	var ballblueY = parseInt(document.getElementById('ballblue').getAttribute("cy"));
         var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
 	var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
-	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
 	if(ballblueX>ballX){
 		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
 	}
@@ -34,11 +33,14 @@ function bouger(){
 		document.getElementById('ballblue').setAttribute("cx", ballblueX+15);
 	}
 	
-	if(ballblueY>ballY){
+	else if(ballblueY>ballY){
 		document.getElementById('ballblue').setAttribute("cy", ballblueY-15);
 	}
 	else if(ballblueY<ballY) {
 		document.getElementById('ballblue').setAttribute("cy", ballblueY+15);		
+	}
+	else if (ballblueX==ballX&&ballblueY==ballY) {
+		alert("Perdu, vous vous êtes fait attrapés !")
 	}
 	
 }
