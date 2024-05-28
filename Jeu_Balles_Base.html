@@ -33,13 +33,13 @@ function bouger(){
 		document.getElementById('ballblue').setAttribute("cx", ballblueX+15);
 	}
 	
-	else if(ballblueY>ballY){
+	if(ballblueY>ballY){
 		document.getElementById('ballblue').setAttribute("cy", ballblueY-15);
 	}
 	else if(ballblueY<ballY) {
 		document.getElementById('ballblue').setAttribute("cy", ballblueY+15);		
 	}
-	else if (ballblueX==ballX&&ballblueY==ballY) {
+	if (ballblueX==ballX&&ballblueY==ballY) {
 		alert("Perdu, vous vous êtes fait attrapés !")
 	}
 	
