@@ -27,11 +27,11 @@ function bouger(){
         var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
 	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
 	if(ballblueY>ballY){
-		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
+
 		document.getElementById('ballblue').setAttribute("cy", ballblueY-15);
 	}
 	else {
-		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
+
 		document.getElementById('ballblue').setAttribute("cy", ballblueY+15);		
 	}
 }
