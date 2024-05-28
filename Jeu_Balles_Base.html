@@ -23,10 +23,8 @@ function principale(){
 function bouger(){
 	//Code à créer pour faire bouger la boule enemy
 	var ballblueX = parseInt(document.getElementById('ballblue').getAttribute("cx"));
-	ballblueX -= 15;
-        if(ballX<15){ballX=15;}
-	document.getElementById('ballblue').setAttribute("cx", ballblueX);
-	break;
+	
+        if(ballX<15){ballblueX -= 15;}
 	
 }
 
