@@ -25,15 +25,22 @@ function bouger(){
 	var ballblueX = parseInt(document.getElementById('ballblue').getAttribute("cx"));
 	var ballblueY = parseInt(document.getElementById('ballblue').getAttribute("cy"));
         var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
+	var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
 	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
+	if(ballblueX>ballX){
+		document.getElementById('ballblue').setAttribute("cx", ballblueX+15);
+	}
+	else if(ballblueX<ballX){
+		document.getElementById('ballblue').setAttribute("cx", ballblueX-15);
+	}
+	
 	if(ballblueY>ballY){
-
 		document.getElementById('ballblue').setAttribute("cy", ballblueY-15);
 	}
-	else {
-
+	else if(ballblueY<ballY) {
 		document.getElementById('ballblue').setAttribute("cy", ballblueY+15);		
 	}
+	
 }
 
 
