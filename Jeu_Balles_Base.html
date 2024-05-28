@@ -22,8 +22,11 @@ function principale(){
 
 function bouger(){
 	//Code à créer pour faire bouger la boule enemy
-	var ballblueX = parseInt(document.getElementById('ballblue').getAttribute("cx"));	
-        if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
+	var ballblueX = parseInt(document.getElementById('ballblue').getAttribute("cx"));
+	var ballblueY = parseInt(document.getElementById('ballblue').getAttribute("cy"));
+        var ballY = parseInt(document.getElementById('ball').getAttribute("cy"));
+	if(ballblueX>15){document.getElementById('ballblue').setAttribute("cx", ballblueX-15);}
+	if(ballY>ballblueY){document.getElementById('ballblue').setAttribute("cy", ballblueY-15);}
 }
 
 
